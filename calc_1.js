@@ -1,0 +1,46 @@
+// Screen clear
+function screenClear() {
+    document.getElementById("result").value = "";
+}
+
+
+// Delete last symbol
+function eventD() {
+    let delet1 = document.getElementById("result").value; 
+    let delet2 = delet1.replace(/.$/, '');
+    document.getElementById("result").value = delet2;    
+}
+
+
+// Display values
+function display(value) {
+    document.getElementById("result").value += value;
+}
+
+
+// Function calculate 1 percend % and return result
+function percend1() {
+    let k = document.getElementById("result").value;
+    let z = k/100;
+    document.getElementById("result").value = z;
+
+    window.onerror = function () {
+        08.
+        alert("Ошибка синтаксиса. Введите математический оператор (+, -, *, /) до или после скобок.");
+        09.
+    }
+}
+
+
+// Function calculate and return result
+function calculate() {
+    let k = document.getElementById("result").value;
+    let z = eval(k);
+    document.getElementById("result").value = z;
+
+    window.onerror = function () {
+        08.
+        alert("Ошибка синтаксиса. Введите математический оператор (+, -, *, /) до или после скобок.");
+        09.
+    }
+}
